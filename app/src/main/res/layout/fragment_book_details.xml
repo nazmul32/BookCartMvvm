@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.BookDetailsFragment"
+    android:background="@color/color_white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/margin_smaller"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_details_preview"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:scaleType="centerInside"/>
+
+            <ImageView
+                android:id="@+id/iv_details_cart"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:scaleType="centerInside"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_cart_unchecked"/>
+
+            <ImageView
+                android:id="@+id/iv_details_wish_list"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:scaleType="centerInside"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_wish_list_unchecked"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="@dimen/margin_smaller"
+            android:text="@string/id"/>
+
+        <TextView
+            android:id="@+id/tv_details_id"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_medium"
+            android:paddingTop="@dimen/margin_smaller"
+            android:paddingBottom="@dimen/margin_smaller"
+            android:textColor="@color/color_black"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:background="@drawable/bg_book_details_item"
+            android:paddingLeft="@dimen/margin_smaller"
+            android:paddingRight="@dimen/margin_smaller"
+            android:text="@string/id"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="@dimen/margin_smaller"
+            android:text="@string/title"/>
+
+        <TextView
+            android:id="@+id/tv_details_title"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_medium"
+            android:paddingTop="@dimen/margin_smaller"
+            android:paddingBottom="@dimen/margin_smaller"
+            android:textColor="@color/color_black"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:background="@drawable/bg_book_details_item"
+            android:text="@string/title"
+            android:paddingLeft="@dimen/margin_smaller"
+            android:paddingRight="@dimen/margin_smaller"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="@dimen/margin_smaller"
+            android:text="@string/subtitle"/>
+
+        <TextView
+            android:id="@+id/tv_details_sub_title"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_medium"
+            android:paddingTop="@dimen/margin_smaller"
+            android:paddingBottom="@dimen/margin_smaller"
+            android:textColor="@color/color_black"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:background="@drawable/bg_book_details_item"
+            android:text="@string/subtitle"
+            android:paddingLeft="@dimen/margin_smaller"
+            android:paddingRight="@dimen/margin_smaller"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="@dimen/margin_smaller"
+            android:text="@string/description"/>
+
+        <TextView
+            android:id="@+id/tv_details_description"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_medium"
+            android:paddingTop="@dimen/margin_smaller"
+            android:paddingBottom="@dimen/margin_smaller"
+            android:textColor="@color/color_black"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:background="@drawable/bg_book_details_item"
+            android:text="@string/description"
+            android:paddingLeft="@dimen/margin_smaller"
+            android:paddingRight="@dimen/margin_smaller"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="@dimen/margin_smaller"
+            android:text="@string/created_at"/>
+
+        <TextView
+            android:id="@+id/tv_details_created_at"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_medium"
+            android:paddingTop="@dimen/margin_smaller"
+            android:paddingBottom="@dimen/margin_smaller"
+            android:textColor="@color/color_black"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:background="@drawable/bg_book_details_item"
+            android:text="@string/created_at"
+            android:paddingLeft="@dimen/margin_smaller"
+            android:paddingRight="@dimen/margin_smaller"/>
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="@dimen/margin_smaller"
+            android:text="@string/updated_at"/>
+
+        <TextView
+            android:id="@+id/tv_details_updated_at"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_medium"
+            android:paddingTop="@dimen/margin_smaller"
+            android:paddingBottom="@dimen/margin_smaller"
+            android:textColor="@color/color_black"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:background="@drawable/bg_book_details_item"
+            android:text="@string/updated_at"
+            android:paddingLeft="@dimen/margin_smaller"
+            android:paddingRight="@dimen/margin_smaller"/>
+
+    </LinearLayout>
+
+</ScrollView>
